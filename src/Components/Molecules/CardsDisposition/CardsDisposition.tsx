@@ -1,11 +1,14 @@
 import { pokemonCardProps } from "@/src/types/cards";
 import { PokemonCard } from "../../Atoms/cards/pokemonCard";
 import { Paginate } from "../../Atoms/paginate/Paginate";
+import { memo } from "react";
 type pokemonCard = {
   data: pokemonCardProps[];
 };
 
-export const CardsDisposition = ({ data }: pokemonCard) => {
+export const CardsDisposition = memo(function CardsDisposition({
+  data,
+}: pokemonCard) {
   return (
     <>
       <ul>
@@ -24,4 +27,4 @@ export const CardsDisposition = ({ data }: pokemonCard) => {
       `}</style>
     </>
   );
-};
+});
