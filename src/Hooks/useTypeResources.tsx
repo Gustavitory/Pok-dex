@@ -1,0 +1,43 @@
+export const useTypeResources = (type: string) => {
+  const colors: Record<string, string> = {
+    grass: "#78C850",
+    poison: "#B058A0",
+    water: "#3899F8",
+    bug: "#A8B820",
+    steel: "#A8A8C0",
+    normal: "#A8A090",
+    fire: "#F05030",
+    flying: "#98A8F0",
+    fighting: "#A05038",
+    electric: "#F8D030",
+    ground: "#E9D6A4",
+    rock: "#B8A058",
+    psychic: "#F870A0",
+    ice: "#58C8E0",
+    ghost: "#6060B0",
+    dragon: "#7860E0",
+    dark: "#7A5848",
+    fairy: "#E79FE7",
+  };
+  const icons: Record<string, string> = {
+    grass: "/tipos/Planta.png",
+    poison: "/tipos/Veneno.png",
+    water: "/tipos/Agua.png",
+    bug: "/tipos/Bicho.png",
+    steel: "/tipos/Acero.png",
+    normal: "/tipos/Normal.png",
+    fire: "/tipos/Fuego.png",
+    flying: "/tipos/Volador.png",
+    fighting: "/tipos/Lucha.png",
+    electric: "/tipos/Eléctrico.png",
+    ground: "/tipos/Tierra.png",
+    rock: "/tipos/Roca.png",
+    psychic: "/tipos/Psíquico.png",
+    ice: "/tipos/Hielo.png",
+    ghost: "/tipos/Fantasma.png",
+    dragon: "/tipos/Dragón.png",
+    dark: "/tipos/Siniestro.png",
+    fairy: "/tipos/Hada.png",
+  };
+  return { color: colors[type], icons };
+};
